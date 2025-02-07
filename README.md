@@ -1,2 +1,2 @@
-# this Repo is created by Vijay
-Its mainly for solving leetcode problems using Python
+# this Repo is created by Vijay Bhatia
+Its mainly for solving leetcode problems using Python.
