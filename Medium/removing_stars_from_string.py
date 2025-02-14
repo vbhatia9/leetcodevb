@@ -38,6 +38,26 @@ The operation above can be performed on s.
 
 """
 
-class Solution:
+class rmstars:
     def removeStars(self, s: str) -> str:
-        
+        stk = []
+        for c in s:
+            if c == "*": # and not stk:
+                print(f"stk before pop {stk} and c is {c}")
+                stk.pop()
+                print(f"stk AFTER pop {stk} and c is {c}")
+            elif c !="*":
+                print(f"stk before append{stk} and c is {c}")
+                stk.append(c)
+                print(f"stk after append{stk} and c is {c}")
+        newstk= ''.join(stk)
+        print(newstk)
+        return newstk
+
+
+
+if __name__ == "__main__": 
+    s = "leet**cod*e"
+    obj1 = rmstars()
+    result = obj1.removeStars(s)
+
