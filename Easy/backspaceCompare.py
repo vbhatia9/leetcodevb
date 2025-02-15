@@ -31,26 +31,38 @@ s and t only contain lowercase letters and '#' characters.
 """
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
-
+        # print(f"{len(s), len(t)}")
+        # if len(s)!= len(t):
+        #  return False
         def nextValidChar(strng,indx):
             backspace= 0 
-            while indx > 0:
-
+            while indx >= 0:
+                print(f"Backpsace = {backspace} , strng[indx] = {strng[indx]}")
                 if backspace == 0 and strng[indx] != '#':
                     break
                 elif strng[indx] == '#':
                     backspace +=1
                 else:
-                    indx-=1
+                     backspace -=1 # if no # backspace and backspace > 0 then decrement backspace
+                
+                indx-=1
             return indx
 
-        s_index = nextValidChar(s,len(s))
-        t_index = nextValidChar(t,len(t))
+        s_index ,t_index  = len(s)-1,len(t)-1 # 2  pointer
+        while s_index >=0 or t_index>=0: #IF anyone get <0 still it enters loop but will be return false below
+        
+            s_index = nextValidChar(s,s_index)
+            t_index= nextValidChar(t,t_index)
         #check if the indx returned is out of range
 
-        if s_index != t_index:
-            return False
-
+            char_s = s[s_index] if s_index >=0 else ""
+            char_t = t[t_index] if t_index >=0 else ""
+            print(f"char_s = {char_s }  AND char_t = {char_t} ")
+            if char_s != char_t:
+                return False
+            s_index-=1
+            t_index-=1
+        return True
 
         #Sol 2
         # stk= []
@@ -70,8 +82,15 @@ class Solution:
 
 
 if __name__ == "__main__": 
-    s = "ab#c", t = "ad#c"
+    # s = "ab#c"
+    # t = "ad#c"
+
+    s= "bxj##tw"
+    t = "bxj###tw"
+    # s = "xywrrmp" 
+    # t= "xywrrmu#p"
     obj1 = Solution()
     result = obj1.backspaceCompare(s,t)
+    print(result)
 
 
