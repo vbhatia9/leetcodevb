@@ -29,3 +29,49 @@ Constraints:
 s and t only contain lowercase letters and '#' characters.
  
 """
+class Solution:
+    def backspaceCompare(self, s: str, t: str) -> bool:
+
+        def nextValidChar(strng,indx):
+            backspace= 0 
+            while indx > 0:
+
+                if backspace == 0 and strng[indx] != '#':
+                    break
+                elif strng[indx] == '#':
+                    backspace +=1
+                else:
+                    indx-=1
+            return indx
+
+        s_index = nextValidChar(s,len(s))
+        t_index = nextValidChar(t,len(t))
+        #check if the indx returned is out of range
+
+        if s_index != t_index:
+            return False
+
+
+        #Sol 2
+        # stk= []
+        # if len(s)!=len(t):
+        #     return False
+        # for c in s:
+        #      #Check the length of stack first and then see the last element inserted it equal to c or not
+        #     if   len(stk)>0 and c == "*":  
+        #         print(f"stk before pop = {stk}  ")
+        #         stk.pop()
+        #         print(f"stk AFTER pop = {stk} ")
+        #     else:
+        #         stk.append(c)
+        #         print(f"stk after append{stk} ")
+        # newstk= ''.join(stk)
+
+
+
+if __name__ == "__main__": 
+    s = "ab#c", t = "ad#c"
+    obj1 = Solution()
+    result = obj1.backspaceCompare(s,t)
+
+
