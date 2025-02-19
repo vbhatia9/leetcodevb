@@ -47,18 +47,24 @@ class findbalanced():
         mapping = { ']':'[','}':'{',')':'('} #hash map
         for c in inp:
             if c in mapping:
-                print(f"stk{stk} stk[-1] {stk[-1] }")
-                if stk and stk[-1] == c:
+                print(f"stk = {stk} stk[-1] = {stk[-1]} and c is {c}")
+                if  stk and stk[-1] == mapping[c]:
                     print("STK popping",stk)
-                    stk.pop(c)
+                    stk.pop()
+                else: return False
             else:
                 stk.append(c)
         print("STK final",stk)
-        return False
+        if stk:
+            return False
+        else: 
+            return True
 
 if __name__ == "__main__":
     inp = "()[]{}"
     
     obj1 = findbalanced()
     result = obj1.find_brackets(inp)
+    print(" result", result)
+    result = obj1.find_brackets("{]}")
     print(" result", result)
