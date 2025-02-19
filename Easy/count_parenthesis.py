@@ -55,10 +55,9 @@ class findbalanced():
             else:
                 stk.append(c)
         print("STK final",stk)
-        if stk:
-            return False
-        else: 
-            return True
+        
+        return True if not stk else False
+        
 
 if __name__ == "__main__":
     inp = "()[]{}"
