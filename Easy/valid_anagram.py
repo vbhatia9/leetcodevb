@@ -21,7 +21,7 @@ Output: false
 
 from collections import Counter
 
-def valid_anagram(s:str,target:str):
+def valid_anagram(s:str,t:str):
     #sol 1
     #print(f"Sorted S {sorted(s)} ,sorted T {sorted(target)}")
     # if sorted(s) == sorted(target):
@@ -30,7 +30,7 @@ def valid_anagram(s:str,target:str):
     # return False
 
     #sol 2
-    if Counter(s)== Counter(target):
+    if Counter(s)== Counter(t):
         return True
    
     return False
