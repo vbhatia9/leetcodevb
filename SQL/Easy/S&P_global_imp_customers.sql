@@ -1,4 +1,4 @@
-"""
+/*
 Identify S&P Global's Most Important Customers
 
 You are given two tables - customers and sales.
@@ -22,7 +22,7 @@ transaction_id	customer_id	transaction_date	amount
 1004	            3	    06/20/2022 10:00:00	4000
 1005	            4	    06/15/2022 16:00:00	3000
 1006	            4	    07/20/2022 19:00:00	7500
-"""
+*/
 
 SELECT c.customer_id, c.first_name, c.last_name, c.email, SUM(s.amount) AS total_spent
 FROM customers AS c

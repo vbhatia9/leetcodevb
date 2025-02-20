@@ -1,4 +1,4 @@
-"""
+/*
 1731. The Number of Employees Which Report to Each Employee
 
 Table: Employees
@@ -22,4 +22,4 @@ Write a solution to report the ids and the names of all managers, the number of 
 
 Return the result table ordered by employee_id.
 
-"""
+*/
