@@ -39,8 +39,8 @@ class Solution:
          
         for s in strs:
             count = [0] * 26 # a .... z
-            print(f"Count {count}")
-            print(f"s {s}")
+            #print(f"Count {count}")
+            #print(f"s {s}")
 
             for c in s:
                 #print(f"s {s} and C = {c}")
@@ -49,10 +49,31 @@ class Solution:
 
             res[tuple(count)].append(s)
             #print(f"RES values {res.values()}  RES Items {res.items()}")
-        return res.values()
+            print(f"RES values {list(res.values())} ")  
+        return list(res.values())
+    
+    def groupAnagrams_v2(self, strs: list[str]) -> list[list[str]]:
+   
+        res = defaultdict(list)
+
+        for s in strs:
+            print(f"String {s}")
+            key = "".join(sorted(s))
+            print(f"KEY {key}")
+
+            res[key].append(s)
+            print(f"RES values {list(res.values())} ")
+            print(f"RES items {list(res.items())} ")
+        
+        
+        return list(res.values())
+
     
 if __name__ == "__main__": 
     strs = ["eat","tea","tan","ate","nat","bat"]
-
+   
     obj1 = Solution()
+    print(f"Input {strs}")
     result = obj1.groupAnagrams(strs)
+    print(f"Input {strs}")
+    result = obj1.groupAnagrams_v2(strs)
