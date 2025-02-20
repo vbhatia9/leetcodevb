@@ -35,7 +35,7 @@ from collections import defaultdict
 
 class Solution:
     def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
-        res = defaultdict[list]
+        res = defaultdict(list)
          
         for s in strs:
             count = [0] * 26 # a .... z
@@ -43,14 +43,14 @@ class Solution:
             print(f"s {s}")
 
             for c in s:
-                print(f"s {s} and C = {c}")
+                #print(f"s {s} and C = {c}")
                 count[ord(c)-ord('a')]+=1
-                print(f"NEW Count {count}")
+                #print(f"NEW Count {count}")
 
             res[tuple(count)].append(s)
-            print(f"RES {res}")
-
-
+            #print(f"RES values {res.values()}  RES Items {res.items()}")
+        return res.values()
+    
 if __name__ == "__main__": 
     strs = ["eat","tea","tan","ate","nat","bat"]
 
