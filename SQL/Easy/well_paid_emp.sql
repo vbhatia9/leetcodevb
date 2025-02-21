@@ -18,7 +18,6 @@ employee_id	employee_name
 
 This is the output because Olivia Smith earns $8,000, surpassing her manager, William Davis who earns 7,800.
 */
-
 -- First, we perform a SELF-JOIN where we treat the first employee table (mgr) as the managers' table and the second employee table (emp) as the employees' table. Then we use a WHERE clause to filter the results, ensuring we only get employees whose salaries are higher than their manager's salary.
 
 SELECT
