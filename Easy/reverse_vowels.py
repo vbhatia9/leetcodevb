@@ -29,7 +29,7 @@ Output: "costum"
 # The space complexity is O(n) as we convert the string s to a list of characters.
 # This approach is efficient and easy to implement.
 def reverse_vowels(s):
-    vowels = set('aeiouAEIOU')
+    vowels = set('AEIOUaeiou')
     s = list(s)
     i, j = 0, len(s) - 1
     while i < j:
@@ -69,4 +69,5 @@ def reverse(s):
 """
 if __name__ == "__main__":
     s = "IceCream"
-    reverse_vowels(s)   #Output: "AceCrim"
+    output=reverse_vowels(s) 
+    print(output)  #Output: "aceCreImg"
