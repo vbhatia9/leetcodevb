@@ -23,6 +23,15 @@ Input: s = "azxxzy"
 Output: "ay"
  
 """
+#Solution 1
+# In this approach, we use a stack to store the characters of the input string s.
+# We iterate through each character in s and compare it with the top element of the stack.
+# If the character is equal to the top element, we pop the top element from the stack.
+# Otherwise, we push the character onto the stack.
+# Finally, we join the characters in the stack to form the final string.
+# This approach has a time complexity of O(n) since we iterate through each character in s once.
+# The space complexity is also O(n) to store the characters in the stack.
+# This approach is efficient and easy to implement.
 class Removedup:
     def removeDuplicates(self, s: str) -> str:
         stk= []
