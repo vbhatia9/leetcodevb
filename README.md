@@ -43,13 +43,16 @@ The repository is organized into the following directories:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/leetcode-solutions.git
+   git clone https://github.com/vbhatia9/leetcodevb.git
    ```
 
 2. Navigate to the desired directory to find the solution you are looking for.
 3. Run the Python scripts using:
 
+```sh
 python filename.py
+```
+
 4. Execute the SQL queries in your preferred SQL environment.
 
 Contributing
