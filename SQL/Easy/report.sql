@@ -1,5 +1,6 @@
 /*
-1731. The Number of Employees Which Report to Each Employee
+1731. Find The Number of Employees Which Report to Each Employee
+
 
 Table: Employees
 
@@ -22,4 +23,31 @@ Write a solution to report the ids and the names of all managers, the number of 
 
 Return the result table ordered by employee_id.
 
+Input
+Employees table:
+| employee_id | name    | reports_to | age |
+| ----------- | ------- | ---------- | --- |
+| 9           | Hercy   | null       | 43  |
+| 6           | Alice   | 9          | 41  |
+| 4           | Bob     | 9          | 36  |
+| 2           | Winston | null       | 37  |
+
+Output
+| employee_id | name  | reports_count | average_age |
+| ----------- | ----- | ------------- | ----------- |
+| 9           | Hercy | 2             | 39          |
 */
+
+SELECT 
+    e.employee_id, 
+    e.name, 
+    COUNT(r.employee_id) AS reports_count, 
+    ROUND(AVG(r.age)) AS average_age
+FROM 
+    Employees e
+JOIN 
+    Employees r ON e.employee_id = r.reports_to
+GROUP BY 
+    e.employee_id, e.name
+ORDER BY 
+    e.employee_id;
