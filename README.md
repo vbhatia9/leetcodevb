@@ -1,12 +1,12 @@
-# Leetcode Solutions Repository is created by Vijay Bhatia
+# Leetcode Solutions Repository is created by Vijay Bhatia 🚀
+Welcome to the Leetcode Solutions Repository created by **Vijay Bhatia**! This repository contains solutions to various Leetcode problems using **Python** and **SQL**. The problems are categorized based on their difficulty levels: **Easy**, **Medium**, and **Hard**.
 
-This repository is created by Vijay Bhatia. It contains solutions to various Leetcode problems using Python and SQL. The problems are categorized based on their difficulty levels: Easy, Medium, and Hard.
-
-## Structure
+## Structure  📂
 
 The repository is organized into the following directories:
 
-### Python Solutions
+### Python Solutions 🐍
+
 
 - **Easy**: Contains solutions to easy-level Leetcode problems.
   - [backspaceCompare.py](Easy/backspaceCompare.py): Solution for comparing two strings after backspace operations.
@@ -23,11 +23,12 @@ The repository is organized into the following directories:
   - [two_sum.py](Easy/two_sum.py): Solution for finding two indices in an array that sum up to a target value.
   - [valid_anagram.py](Easy/valid_anagram.py): Solution for checking if two strings are anagrams.
 
+
 - **Medium**: Contains solutions to medium-level Leetcode problems.
   - [group_anagrams.py](Medium/group_anagrams.py): Solution for grouping anagrams.
   - [removing_stars_from_string.py](Medium/removing_stars_from_string.py): Solution for removing stars from a string.
 
-### SQL Solutions
+### SQL Solutions 🗃️
 
 - **Easy**: Contains solutions to easy-level SQL problems.
   - [Invalid_tweets.sql](SQL/Easy/Invalid_tweets.sql): Solution for finding invalid tweets.
@@ -39,9 +40,9 @@ The repository is organized into the following directories:
   - [manager_5_reports.sql](SQL/Medium/manager_5_reports.sql): Solution for finding managers with at least five direct reports.
   - [second_highest_salary.sql](SQL/Medium/second_highest_salary.sql): Solution for finding the second highest salary.
 
-## How to Use
+## How to Use  🛠️
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```sh
    git clone https://github.com/vbhatia9/leetcodevb.git
    ```
@@ -55,8 +56,8 @@ python filename.py
 
 4. Execute the SQL queries in your preferred SQL environment.
 
-Contributing
+Contributing 🤝
 Feel free to contribute to this repository by submitting pull requests. Make sure to follow the existing code style and include appropriate comments and documentation.
 
-License
+License 📜
 This repository is licensed under the MIT License.
