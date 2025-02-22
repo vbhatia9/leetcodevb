@@ -49,7 +49,8 @@ It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 #   Solution 1
 # In this approach, we use a dictionary to map the Roman numerals to their corresponding integer values.
 # We iterate through the input string s and compare the values of the current Roman numeral and the next Roman numeral.
-# If the value of the current Roman numeral is less than the value of the next Roman numeral, we subtract the value of the current Roman numeral from the total.
+# If the value of the current Roman numeral is less than the value of the next Roman numeral, we subtract the value of the 
+# current Roman numeral from the total.
 # Otherwise, we add the value of the current Roman numeral to the total.
 # Finally, we return the total value as the result.
 # This approach has a time complexity of O(n) since we iterate through the input string s once.
