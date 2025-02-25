@@ -17,11 +17,13 @@ The repository is organized into the following directories:
   - [merge_sorted_array.py](Easy/merge_sorted_array.py): Solution for merging two sorted arrays.
   - [remove_adj_dup.py](Easy/remove_adj_dup.py): Solution for removing adjacent duplicates in a string.
   - [reverse_linked_list.py](Easy/reverse_linked_list.py): Solution for reversing a linked list.
+  - [reverse_string.py](Easy/reverse_string.py) : Solution for reversing a string.
   - [reverse_vowels.py](Easy/reverse_vowels.py): Solution for reversing vowels in a string.
   - [roman_to_number2.py](Easy/roman_to_number2.py): Solution for converting Roman numerals to integers.
   - [second_largest.py](Easy/second_largest.py): Solution for finding the second largest element in an array.
   - [two_sum.py](Easy/two_sum.py): Solution for finding two indices in an array that sum up to a target value.
   - [valid_anagram.py](Easy/valid_anagram.py): Solution for checking if two strings are anagrams.
+  - [valid_palindrome.py](Easy/valid_palindrome.py): Solution for checking palindrome.
 
 
 - **Medium**: Contains solutions to medium-level Leetcode problems.
