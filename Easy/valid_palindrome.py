@@ -44,8 +44,17 @@ class Solution:
                newstr += c.lower() 
         print(newstr)
         return newstr == newstr[::-1]
+    
+       #sol 3
+
+
+       #Sol 4
+       #left pointer and right pointer
+         #left pointer will move from left to right 
+            #right pointer will move from right to left
+            
         
-        
+
     
 if __name__ == "__main__":
     s = "A man, a plan, a canal: Panama"
