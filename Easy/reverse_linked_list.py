@@ -29,6 +29,25 @@ class Solution:
           
         return previous
     
+    #sol 2
+     #Time complexity is O(n) and space complexity is O(n) due to recursion stack
+    #This approach uses recursion to reverse the linked list.
+    #We recursively call the reverseList function with the next node of the current node.
+    #When the base case is reached (i.e., the current node is None or the current node is the last node), we return the new head of the reversed linked list.
+    #In each recursive call, we update the next pointer of the next node to point to the current node and set the next pointer of the current node to None.
+    #This effectively reverses the linked list.
+    #This approach has a time complexity of O(n) as we make n recursive calls to reverse the linked list.
+    #The space complexity is also O(n) due to the recursion stack, which can grow up to n levels deep.
+    #This approach is concise and elegant but may be less efficient than the iterative approach due to the overhead of recursive calls.
+
+    # def reverseList(self, head: Optional[ListNodevb]) -> Optional[ListNodevb]:
+    #     if not head or not head.next:
+    #         return head
+    #     new_head = self.reverseList(head.next)
+    #     head.next.next = head
+    #     head.next = None  
+    #     return new_head
+   
 if __name__ == "__main__":
     head = ListNodevb(1)
     head.next = ListNodevb(2)
