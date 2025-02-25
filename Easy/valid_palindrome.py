@@ -38,21 +38,34 @@ class Solution:
     
    
         #Sol 2
-        newstr = ""
-        for c in s:
-            if  c.isalnum():
-               newstr += c.lower() 
-        print(newstr)
-        return newstr == newstr[::-1]
+        # newstr = ""
+        # for c in s:
+        #     if  c.isalnum():
+        #        newstr += c.lower() 
+        # print(newstr)
+        # return newstr == newstr[::-1]
     
-       #sol 3
+        
 
 
-       #Sol 4
+
+       #Sol 3
        #left pointer and right pointer
          #left pointer will move from left to right 
             #right pointer will move from right to left
-            
+        l ,r = 0,len(s)-1
+        while l<r:
+            if not s[l].isalnum():
+                l+=1
+            elif not s[r].isalnum():
+                r-=1
+            elif s[l].lower() != s[r].lower():
+                return False
+            else:
+                l+=1
+                r-=1
+        return True
+        #Time complexity is O(n) and space complexity is O(1)
         
 
     
@@ -60,4 +73,7 @@ if __name__ == "__main__":
     s = "A man, a plan, a canal: Panama"
     obj1 = Solution()
     result = obj1.isPalindrome(s)   
+    print(result)
+    s2 = "race a car"
+    result = obj1.isPalindrome(s2)   
     print(result)
