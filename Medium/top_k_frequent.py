@@ -38,31 +38,58 @@ class Solution:
          
         return [heapq.heappop(heap)[1] for _ in range(k)] #extracts k most frequent elements from heap
 
+    #sol2
+    def topKFrequent2(self, nums: List[int], k: int) -> List[int]:
+        # nums = [1,1,1,2,2,3]  k = 2
+        count  ={}
+        freq =[[] for i in range(len(nums)+1)]
+        for n in nums:
+             count[n] = count.get(n,0)+1 #counts the occurences of each element in nums count {1: 1},
+                                        #count {1: 2}
+                                        #count {1: 3}
+                                        # count {1: 3, 2: 1}
+                                        # count {1: 3, 2: 2}
+                                        # count {1: 3, 2: 2, 3: 1}
+             print(f"count {count}")
+        for key, value in count.items():
+            freq[value].append(key) #appends key to the value of the key in the freq list like this [[],[],[3],[1,2]] ,freq [[], [], [], [1], [], [], []]
+                                    #freq [[], [], [2], [1], [], [], []], freq [[], [3], [2], [1], [], [], []]
+            print(f"freq {freq}")
+        res = []
+        for l in freq[::-1]:
+            res.extend(l)
+            if len(res) >= k:
+                break
+        return res
+        #Time complexity is O(n) and space complexity is O(n) due to the count and freq dictionary and list
+        #This approach is efficient and easy to implement.
+
+
 
 if __name__ == "__main__":
     nums = [1,1,1,2,2,3]
     k = 2
-    res=Solution().topKFrequent(nums,k)
+    res=Solution().topKFrequent2(nums,k)
     print(f"res {res}")
     
-    nums = [1]
-    k = 1
-    res= Solution().topKFrequent(nums,k)
-    print(f"res {res}")
+    # nums = [1]
+    # k = 1
+    # res= Solution().topKFrequent(nums,k)
+    # print(f"res {res}")
 
-    nums = [1,1,1,2,2]
-    k = 2
-    res= Solution().topKFrequent(nums,k)
-    print(f"res {res}")
+    # nums = [1,1,1,2,2]
+    # k = 2
+    # res= Solution().topKFrequent(nums,k)
+    # print(f"res {res}")
 
-    nums = [1,1,1,2,2,3,3,3,3]
-    k = 2
-    print(f"nums {nums}")
-    res=Solution().topKFrequent(nums,k)
-    print(f"res {res}") #expected [3, 1]
+    # nums = [1,1,1,2,2,3,3,3,3]
+    # k = 2
+    # print(f"nums {nums}")
+    # res=Solution().topKFrequent(nums,k)
+    # print(f"res {res}") #expected [3, 1]
 
-    nums = [3,1,0,2]
-    k = 1
-    print(f"nums {nums}")
-    res=Solution().topKFrequent(nums,k)
-    print(f"res {res}") #expected 0
+    # nums = [3,1,0,2]
+    # k = 1
+    # print(f"nums {nums}")
+    # res=Solution().topKFrequent(nums,k)
+    # print(f"res {res}") #expected 0
