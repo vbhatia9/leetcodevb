@@ -29,14 +29,14 @@ class Solution:
 
         Finally, the code extracts the k most frequent elements from the heap using a list comprehension. The heapq.heappop(heap) function removes and returns the smallest element from the heap, which corresponds to the most frequent element due to the negative counts. This operation is repeated k times, and the elements are collected into a list, which is then returned as the result. This list contains the k most frequent elements from the original nums list.
 """
-        count = collections.Counter(nums)
+        count = collections.Counter(nums) #counts the occurences of each element in nums
         print(f"count {count}")
-        heap = [(-value,key) for key,value in count.items()]
+        heap = [(-value,key) for key,value in count.items()] #converts to negative value to make it max heap
         print(f"heap {heap}")
-        heapq.heapify(heap)
+        heapq.heapify(heap) #converts list into heap
         print(f"heap after heapify {heap}")
          
-        return [heapq.heappop(heap)[1] for _ in range(k)]
+        return [heapq.heappop(heap)[1] for _ in range(k)] #extracts k most frequent elements from heap
 
 
 if __name__ == "__main__":
@@ -59,4 +59,10 @@ if __name__ == "__main__":
     k = 2
     print(f"nums {nums}")
     res=Solution().topKFrequent(nums,k)
-    print(f"res {res}")
+    print(f"res {res}") #expected [3, 1]
+
+    nums = [3,1,0,2]
+    k = 1
+    print(f"nums {nums}")
+    res=Solution().topKFrequent(nums,k)
+    print(f"res {res}") #expected 0
