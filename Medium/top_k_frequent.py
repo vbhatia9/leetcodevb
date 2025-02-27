@@ -57,7 +57,7 @@ class Solution:
             print(f"freq {freq}")
         res = []
         for l in freq[::-1]:
-            res.extend(l)
+            res.extend(l) #extend the list l to res
             if len(res) >= k:
                 break
         return res
