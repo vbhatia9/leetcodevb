@@ -30,6 +30,8 @@ The repository is organized into the following directories:
   - [group_anagrams.py](Medium/group_anagrams.py): Solution for grouping anagrams.
   - [removing_stars_from_string.py](Medium/removing_stars_from_string.py): Solution for removing stars from a string.
   - [top_k_frequent.py](Medium/top_k_frequent.py) : Solution for finding the k most frequent elements.
+  - [encode_decode.py](Medium/encode_decode.py) : PREMIUM Solution for encoding and Decoding Strings .
+  
 
 ### SQL Solutions 🗃️
 
