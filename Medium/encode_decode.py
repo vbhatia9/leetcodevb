@@ -40,9 +40,33 @@ class Codec:
         return strs
 
 
+class Codec2:
+    def encode2(self, strs):
+        """Encodes a list of strings to a single string."""
+        
+        new_str = ""
+        for s in strs:
+            new_str += str(len(s)) + ":" + s
+            print(f"NEWSTR  {new_str}")
+        return new_str
+    
+
+    def decode2(self, s):
+        """Decodes a single string to a list of strings."""
+        i = 0
+        strs = []
+        
+
+
 # Example usage:
 codec = Codec()
 encoded = codec.encode(["neet", "code", "love", "you"])
 print(f"Encoded: {encoded}")
 decoded = codec.decode(encoded)
 print(f"Decoded: {decoded}")
+
+codec2 = Codec2()
+encoded2 = codec2.encode2(["neet", "code", "love", "you"])
+print(f"Encoded2: {encoded2}")
+decoded2 = codec2.decode2(encoded2)
+print(f"Decoded2: {decoded2}")
