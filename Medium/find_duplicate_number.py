@@ -38,7 +38,9 @@ def find_duplicate(nums):
     # Phase 1: Finding the intersection point of the two runners.
     while True:
         slow = nums[slow]
+        print(f"slow {slow}")
         fast = nums[nums[fast]]
+        print(f"fast {fast}")
         if slow == fast:
             break
     
@@ -46,11 +48,13 @@ def find_duplicate(nums):
     slow = nums[0]
     while slow != fast:
         slow = nums[slow]
+        print(f"slow line 51 {slow}")
         fast = nums[fast]
+        print(f"fast line 53 {fast}")
     
     return slow
 
 # Example usage:
 print(find_duplicate([1,3,4,2,2]))  # Output: 2
-print(find_duplicate([3,1,3,4,2]))  # Output: 3
-print(find_duplicate([3,3,3,3,3]))  # Output: 3
+#print(find_duplicate([3,1,3,4,2]))  # Output: 3
+#print(find_duplicate([3,3,3,3,3]))  # Output: 3
