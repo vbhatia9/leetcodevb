@@ -48,17 +48,25 @@ nums is sorted in non-decreasing order.
 from typing import List
 
 def remove_duplicates(nums: List[int]) -> int:
-    if not nums:
-        return 0
+    # if not nums:
+    #     return 0
 
-    write_index = 1
+    # write_index = 1
 
-    for i in range(1, len(nums)):
-        if nums[i] != nums[i - 1]:
-            nums[write_index] = nums[i]
-            write_index += 1
+    # for i in range(1, len(nums)):
+    #     if nums[i] != nums[i - 1]:
+    #         nums[write_index] = nums[i]
+    #         write_index += 1
 
-    return write_index
+    # return write_index
+
+    #sol 2 neet
+    l =1
+    for r in range(1,len(nums)):
+        if nums[r]!= nums[r-1]:
+            nums[l] = nums[r]
+            l+=1
+    return l
 
 # Example usage:
 nums = [1, 1, 2]
