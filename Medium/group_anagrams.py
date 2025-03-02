@@ -53,7 +53,8 @@ class Solution:
         return list(res.values())
     
     def groupAnagrams_v2(self, strs: list[str]) -> list[list[str]]:
-   
+        print("groupAnagrams_v2")
+        print(f"STRS {strs}")
         res = defaultdict(list)
 
         for s in strs:
@@ -63,7 +64,7 @@ class Solution:
 
             res[key].append(s)
             print(f"RES values {list(res.values())} ")
-            print(f"RES items {list(res.items())} ")
+            print(f"RES items {list(res.items())} \n*******")
         
         
         return list(res.values())
