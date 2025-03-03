@@ -16,6 +16,8 @@ The repository is organized into the following directories:
   - [kth_largest.py](Easy/kth_largest.py): Solution for finding the kth largest element in an array.
   - [merge_sorted_array.py](Easy/merge_sorted_array.py): Solution for merging two sorted arrays.
   - [remove_adj_dup.py](Easy/remove_adj_dup.py): Solution for removing adjacent duplicates in a string.
+  - [remove_dup_from_sorted.py](Easy/remove_dup_from_sorted.py): Solution for removing duplicate from sorted array.
+  
   - [reverse_linked_list.py](Easy/reverse_linked_list.py): Solution for reversing a linked list.
   - [reverse_string.py](Easy/reverse_string.py) : Solution for reversing a string.
   - [reverse_vowels.py](Easy/reverse_vowels.py): Solution for reversing vowels in a string.
