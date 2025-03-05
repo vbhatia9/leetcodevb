@@ -42,9 +42,9 @@ in chronological order.
 This query provides a comprehensive summary of the claims data, highlighting the peak claim days and states for each month, which can be useful for identifying trends and patterns
  in the claims data.*/
 
-The first CTE, MonthlyClaims, aggregates the claims data by month, date, and state. It formats the claim_date to extract the month in abbreviated form (e.g., 'Jan', 'Feb') and 
-counts the number of claims (claim_id) for each combination of month, date, and state. This results in a table where each row represents the total number of claims for a specific day
-and state within a month.
+-- The first CTE, MonthlyClaims, aggregates the claims data by month, date, and state. It formats the claim_date to extract the month in abbreviated form (e.g., 'Jan', 'Feb') and 
+-- counts the number of claims (claim_id) for each combination of month, date, and state. This results in a table where each row represents the total number of claims for a specific day
+-- and state within a month.
 
 WITH MonthlyClaims AS (
     SELECT 
