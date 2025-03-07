@@ -22,17 +22,24 @@ def search(nums, target):
         if nums[mid] == target:
             return mid
         
-        if nums[left] <= nums[mid]:
+        #If nums[mid] is not the target, the function determines which side of 
+        # the array is sorted. If the left side (nums[left] to nums[mid]) is sorted, it checks if the target lies within this range. If it does, it adjusts the right pointer to mid - 1 to search in the left half. Otherwise, it adjusts the left pointer to mid + 1 to search in the right half.
+
+        if nums[left] <= nums[mid]: # left side is sorted
             if nums[left] <= target < nums[mid]:    # left side is sorted
                 right = mid - 1
             else:
                 left = mid + 1
         else:
+            #If the right side (nums[mid] to nums[right]) is sorted, it checks if the target lies within this range.
+            #  If it does, it adjusts the left pointer to mid + 1 to search in the right half. 
+            # Otherwise, it adjusts the right pointer to mid - 1 to search in the left half.
             if nums[mid] < target <= nums[right]: # right side is sorted
                 left = mid + 1
             else:
                 right = mid - 1
-                
+    #If the target is not found within the loop, the function returns -1,
+    #  indicating that the target is not present in the array.            
     return -1
 
 # Example usage:
