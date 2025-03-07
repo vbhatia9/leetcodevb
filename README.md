@@ -11,6 +11,7 @@ The repository is organized into the following directories:
 - **Easy**: Contains solutions to easy-level Leetcode problems.
   - [backspaceCompare.py](Easy/backspaceCompare.py): Solution for comparing two strings after backspace operations.
   - [best_time_buy_sell.py](Easy/best_time_buy_sell.py): Solution for best_time to buy & sell stocks.
+  - [binary_search.py](Easy/binary_search..py): Solution for binary search.
   - [contains_dup.py](Easy/contains_dup.py): Solution for checking if an array contains duplicates.
   - [count_parenthesis.py](Easy/count_parenthesis.py): Solution for validating balanced parentheses in a string.
   - [duplicate_array.py](Easy/duplicate_array.py): Solution for finding duplicates in an array.
@@ -22,6 +23,7 @@ The repository is organized into the following directories:
   - [reverse_string.py](Easy/reverse_string.py) : Solution for reversing a string.
   - [reverse_vowels.py](Easy/reverse_vowels.py): Solution for reversing vowels in a string.
   - [roman_to_number2.py](Easy/roman_to_number2.py): Solution for converting Roman numerals to integers.
+  - [search_rotated_array.py](Easy/search_rotated_array.py): Solution for Search in Rotated Sorted Array.
   - [second_largest.py](Easy/second_largest.py): Solution for finding the second largest element in an array.
   - [two_sum.py](Easy/two_sum.py): Solution for finding two indices in an array that sum up to a target value.
   - [valid_anagram.py](Easy/valid_anagram.py): Solution for checking if two strings are anagrams.
@@ -29,10 +31,11 @@ The repository is organized into the following directories:
 
 
 - **Medium**: Contains solutions to medium-level Leetcode problems.
+ - [encode_decode.py](Medium/encode_decode.py) : PREMIUM Solution for encoding and Decoding Strings.
+ - [find_duplicate_number.py](Medium/find_duplicate_number.py) : Solution for finding the Duplicate Number in an array without modifying. (Floyd's Tortoise and Hare (Cycle Detection)).
   - [group_anagrams.py](Medium/group_anagrams.py): Solution for grouping anagrams.
   - [removing_stars_from_string.py](Medium/removing_stars_from_string.py): Solution for removing stars from a string.
   - [top_k_frequent.py](Medium/top_k_frequent.py) : Solution for finding the k most frequent elements.
-  - [encode_decode.py](Medium/encode_decode.py) : PREMIUM Solution for encoding and Decoding Strings.
   
 
 ### SQL Solutions 🗃️
