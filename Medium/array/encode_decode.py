@@ -39,14 +39,14 @@ class Codec:
             strs.append(s[j + 1 : i])   #appends the string to the list
         return strs
 
-
+#sol 2
 class Codec2:
     def encode2(self, strs):
         """Encodes a list of strings to a single string."""
         
         new_str = ""
         for s in strs:
-            new_str += str(len(s)) + ":" + s
+            new_str += str(len(s)) + "#" + s
             print(f"NEWSTR  {new_str}")
         return new_str
     
@@ -55,7 +55,12 @@ class Codec2:
         """Decodes a single string to a list of strings."""
         i = 0
         strs = []
-        
+        while i < len(s):
+            j = s.find("#", i) # finds the index of the colon
+            length = int(s[i:j]) #  extract the length of the string
+            i = j + 1 + length #j is deliemiter so j+1 is the start of the string and length is the end of the string
+            strs.append(s[j + 1 : i])   #appends the string to the list
+        return strs
 
 
 # Example usage:
