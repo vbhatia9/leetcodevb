@@ -16,6 +16,7 @@ The repository is organized into the following directories:
   - [count_parenthesis.py](Easy/count_parenthesis.py): Solution for validating balanced parentheses in a string.
   - [duplicate_array.py](Easy/duplicate_array.py): Solution for finding duplicates in an array.
   - [kth_largest.py](Easy/kth_largest.py): Solution for finding the kth largest element in an array.
+  - [merge_2_sorted_linkedlist.py](Easy/merge_2_sorted_linkedlist.py): Solution for merging two sorted linkedlist.
   - [merge_sorted_array.py](Easy/merge_sorted_array.py): Solution for merging two sorted arrays.
   - [remove_adj_dup.py](Easy/remove_adj_dup.py): Solution for removing adjacent duplicates in a string.
   - [remove_dup_from_sorted.py](Easy/remove_dup_from_sorted.py): Solution for removing duplicate from sorted array.
