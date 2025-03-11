@@ -32,12 +32,13 @@ The repository is organized into the following directories:
 
 
 - **Medium**: Contains solutions to medium-level Leetcode problems.
- - [encode_decode.py](Medium/encode_decode.py) : PREMIUM Solution for encoding and Decoding Strings.
- - [find_duplicate_number.py](Medium/find_duplicate_number.py) : Solution for finding the Duplicate Number in an array without modifying. (Floyd's Tortoise and Hare (Cycle Detection)).
+  - [encode_decode.py](Medium/encode_decode.py) : PREMIUM Solution for encoding and Decoding Strings.
+  - [find_duplicate_number.py](Medium/find_duplicate_number.py) : Solution for finding the Duplicate Number in an array without modifying. (Floyd's Tortoise and Hare (Cycle Detection)).
   - [group_anagrams.py](Medium/group_anagrams.py): Solution for grouping anagrams.
   - [removing_stars_from_string.py](Medium/removing_stars_from_string.py): Solution for removing stars from a string.
+  - [rotate_image.py](Medium/rotate_image.py): Solution for rotation of n x n 2D matrix representing an image by 90 degrees clockwise.
   - [top_k_frequent.py](Medium/top_k_frequent.py) : Solution for finding the k most frequent elements.
-  
+    
 
 ### SQL Solutions 🗃️
 
