@@ -15,6 +15,26 @@ Output: 4
 """
 from typing import List
 # The problem asks us to find the length of the longest consecutive sequence of elements that can be formed from the given array. The elements do not have to be consecutive in the original array. We need to write an algorithm that runs in O(n) time. We can solve this problem using a hash set. The code for this approach is as follows:
+#sol 1 neetcode
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        num_set = set(nums)
+        largest =0
+        length = 0
+        
+        for n in nums:
+             if n-1 not in  num_set:
+                length = 0
+                while (n+length) in  num_set:
+                    length+=1 
+                largest = max(largest,length)
+        return largest
+# Time complexity: O(n)
+# Space complexity: O(n)
+# Approach: We can build a set of the numbers in the array. For each number, we check if the number - 1 is not in the set. If it is not, then we can start a new streak from that number. We keep incrementing the number by 1 and checking if the next number is in the set. If it is, we increment the streak. We keep track of the longest streak and return
+# the longest streak at the end.
+
+
 
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
