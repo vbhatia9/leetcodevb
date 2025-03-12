@@ -13,6 +13,9 @@ Input: nums = [2,20,4,10,3,4,5]
 
 Output: 4
 """
+from typing import List
+# The problem asks us to find the length of the longest consecutive sequence of elements that can be formed from the given array. The elements do not have to be consecutive in the original array. We need to write an algorithm that runs in O(n) time. We can solve this problem using a hash set. The code for this approach is as follows:
+
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         num_set = set(nums)
@@ -60,4 +63,4 @@ class Solution:
 # at the end.
 
 # The first approach is more efficient as it has a time complexity of O(n) and a space complexity of O(n), while the second approach has a time complexity of O(nlogn) and a space complexity of O(1). The first approach is preferred for this problem.
-    
+
