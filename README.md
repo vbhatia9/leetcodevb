@@ -38,6 +38,7 @@ The repository is organized into the following directories:
  - [rotate_image.py](Medium/rotate_image.py): Solution for rotation of n x n 2D matrix representing an image by 90 degrees clockwise.
   - [group_anagrams.py](Medium/group_anagrams.py): Solution for grouping anagrams.
   - [removing_stars_from_string.py](Medium/removing_stars_from_string.py): Solution for removing stars from a string.
+  - [twoSum_2.py](Medium/twoSum_2.py) : Solution for finding Two Sum using 2 Pointers.
   - [top_k_frequent.py](Medium/top_k_frequent.py) : Solution for finding the k most frequent elements.
   
 
