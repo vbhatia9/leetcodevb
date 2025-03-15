@@ -36,6 +36,7 @@ numbers is sorted in non-decreasing order.
 -1000 <= target <= 1000
 The tests are generated such that there is exactly one solution.
 """
+from typing import List
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         left, right = 0, len(numbers) - 1
@@ -48,3 +49,13 @@ class Solution:
             else:
                 right -= 1
         return []
+    
+# Time complexity: O(n)
+# Space complexity: O(1)
+# Approach: We can use the two pointer approach to find the two numbers that add up to the target.
+# We can initialize two pointers, one at the beginning of the array and one at the end of the array.
+# We can keep moving the pointers until we find the two numbers that add up to the target.
+# The time complexity of this approach is O(n) and the space complexity is O(1).
+# The time complexity is O(n) because we are using a single loop to find the two numbers.
+# The space complexity is O(1) because we are not using any extra space.
+# The two pointer approach is an efficient way to solve this problem.
