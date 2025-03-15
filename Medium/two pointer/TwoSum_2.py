@@ -9,8 +9,6 @@ The tests are generated such that there is exactly one solution. You may not use
 
 Your solution must use only constant extra space.
 
- 
-
 Example 1:
 
 Input: numbers = [2,7,11,15], target = 9
