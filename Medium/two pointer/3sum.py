@@ -43,6 +43,7 @@ Explanation: The only possible triplet sums up to 0.
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
+#AUTO
         nums.sort()
         result = []
         n = len(nums)
