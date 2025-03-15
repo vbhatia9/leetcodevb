@@ -44,25 +44,25 @@ Explanation: The only possible triplet sums up to 0.
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
 #AUTO
-        nums.sort()
-        result = []
-        n = len(nums)
-        for i in range(n):
-            if i > 0 and nums[i] == nums[i - 1]:
-                continue
-            left, right = i + 1, n - 1
-            while left < right:
-                total = nums[i] + nums[left] + nums[right]
-                if total < 0:
-                    left += 1
-                elif total > 0:
+        nums.sort() # Sort the array to make it easier to avoid duplicates
+        result = [] # Initialize an empty list to store the result
+        n = len(nums)   # Get the length of the input array
+        for i in range(n):  # Iterate through the array
+            if i > 0 and nums[i] == nums[i - 1]:    # Skip duplicates   
+                continue # Skip duplicate elements
+            left, right = i + 1, n - 1 # Initialize two pointers
+            while left < right:     # While the left pointer is less than the right pointer
+                total = nums[i] + nums[left] + nums[right] # Calculate the sum of the three elements
+                if total < 0: # If the sum is less than 0, move the left pointer to the right
+                    left += 1 
+                elif total > 0: # If the sum is greater than 0, move the right pointer to the left
                     right -= 1
-                else:
+                else:   # If the sum is equal to 0, add the triplet to the result list
                     result.append([nums[i], nums[left], nums[right]])
-                    while left < right and nums[left] == nums[left + 1]:
-                        left += 1
-                    while left < right and nums[right] == nums[right - 1]:
-                        right -= 1
-                    left += 1
-                    right -= 1
-        return result
+                    while left < right and nums[left] == nums[left + 1]: # Skip duplicates
+                        left += 1   # Move the left pointer to the right
+                    while left < right and nums[right] == nums[right - 1]:  # Skip duplicates
+                        right -= 1  # Move the right pointer to the left
+                    left += 1   # Move the left pointer to the right
+                    right -= 1  # Move the right pointer to the left
+        return result   # Return the result list
