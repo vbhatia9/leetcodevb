@@ -66,3 +66,16 @@ class Solution:
                     left += 1   # Move the left pointer to the right
                     right -= 1  # Move the right pointer to the left
         return result   # Return the result list
+
+# Example usage:
+if __name__ == "__main__":
+    nums = [-1, 0, 1, 2, -1, -4]
+    solution = Solution()
+    print(solution.threeSum(nums))
+    # Output: [[-1, -1, 2], [-1, 0, 1]]
+    nums = [0,1,1]
+    
+    print(solution.threeSum(nums))
+# Output: [[-1, -1, 2], [-1, 0, 1]]
+# The output may be in a different order, but the triplets should be the same.
+# The time complexity of this approach is O(n^2) and the space complexity is O(1).
