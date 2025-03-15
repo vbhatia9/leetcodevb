@@ -49,6 +49,9 @@ from typing import List
 # The two pointer approach is an efficient way to solve this problem.
 
 class Solution:
+    # Function to find two numbers that add up to the target
+    # using the two pointer approach
+    #auto
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         left, right = 0, len(numbers) - 1 # Initialize two pointers
         while left < right:
