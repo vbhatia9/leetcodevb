@@ -41,6 +41,7 @@ Explanation: The only possible triplet sums up to 0.
 # The time complexity is O(n^2) because we are using a nested loop to find the triplets. 
 # The space complexity is O(1) because we are not using any extra space.
 
+from typing import List
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
 #AUTO
