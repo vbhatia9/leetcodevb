@@ -37,19 +37,7 @@ numbers is sorted in non-decreasing order.
 The tests are generated such that there is exactly one solution.
 """
 from typing import List
-class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        left, right = 0, len(numbers) - 1
-        while left < right:
-            total = numbers[left] + numbers[right]
-            if total == target:
-                return [left + 1, right + 1]
-            elif total < target:
-                left += 1
-            else:
-                right -= 1
-        return []
-    
+
 # Time complexity: O(n)
 # Space complexity: O(1)
 # Approach: We can use the two pointer approach to find the two numbers that add up to the target.
@@ -59,3 +47,28 @@ class Solution:
 # The time complexity is O(n) because we are using a single loop to find the two numbers.
 # The space complexity is O(1) because we are not using any extra space.
 # The two pointer approach is an efficient way to solve this problem.
+
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        left, right = 0, len(numbers) - 1 # Initialize two pointers
+        while left < right:
+            total = numbers[left] + numbers[right]
+            if total == target:
+                return [left + 1, right + 1]    # Return 1-indexed positions
+             # Move the left pointer to the right or the right pointer to the left
+            elif total < target:
+                left += 1
+            else:
+                right -= 1
+        return []
+
+if __name__ == "__main__":
+    numbers = [2, 7, 11, 15]
+    target = 9
+    solution = Solution()
+    print(solution.twoSum(numbers, target))
+    # Output: [1, 2]
+    numbers = [2, 3, 4]
+    target = 6
+    print(solution.twoSum(numbers, target))
+    # Output: [1, 3]

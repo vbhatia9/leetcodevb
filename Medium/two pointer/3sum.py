@@ -51,7 +51,9 @@ class Solution:
         for i in range(n):  # Iterate through the array
             if i > 0 and nums[i] == nums[i - 1]:    # Skip duplicates   
                 continue # Skip duplicate elements
+
             left, right = i + 1, n - 1 # Initialize two pointers
+            
             while left < right:     # While the left pointer is less than the right pointer
                 total = nums[i] + nums[left] + nums[right] # Calculate the sum of the three elements
                 if total < 0: # If the sum is less than 0, move the left pointer to the right
