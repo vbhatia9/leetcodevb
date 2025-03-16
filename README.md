@@ -32,23 +32,30 @@ The repository is organized into the following directories:
 
 
 - **Medium**: Contains solutions to medium-level Leetcode problems.
- - [3sum.py](Medium/3sum.py) : Solution for threeSum problem with two pointers.
- - [encode_decode.py](Medium/encode_decode.py) : PREMIUM Solution for encoding and Decoding Strings.
- - [find_duplicate_number.py](Medium/find_duplicate_number.py) : Solution for finding the Duplicate Number in an array without modifying. (Floyd's Tortoise and Hare (Cycle Detection)).
- - [rotate_image.py](Medium/rotate_image.py): Solution for rotation of n x n 2D matrix representing an image by 90 degrees clockwise.
+  - [3sum.py](Medium/3sum.py) : Solution for threeSum problem with two pointers.
+  - [encode_decode.py](Medium/encode_decode.py) : PREMIUM Solution for encoding and Decoding Strings.
+  - [find_duplicate_number.py](Medium/find_duplicate_number.py) : Solution for finding the Duplicate Number in an array without modifying. (Floyd's Tortoise and Hare (Cycle Detection)).
+  - [rotate_image.py](Medium/rotate_image.py): Solution for rotation of n x n 2D matrix representing an image by 90 degrees clockwise.
   - [group_anagrams.py](Medium/group_anagrams.py): Solution for grouping anagrams.
   - [removing_stars_from_string.py](Medium/removing_stars_from_string.py): Solution for removing stars from a string.
   - [twoSum_2.py](Medium/twoSum_2.py) : Solution for finding Two Sum using 2 Pointers.
   - [top_k_frequent.py](Medium/top_k_frequent.py) : Solution for finding the k most frequent elements.
-  
+    
 
 ### SQL Solutions 🗃️
 
 - **Easy**: Contains solutions to easy-level SQL problems.
+
+  - [avg_exp_employees.sql](SQL/Easy/avg_exp_employees.sql): Solution for find find avg experience years of all the employees for each project.
+  - [claims.sql](SQL/Easy/claims.sql): Solution for finding claims by month CVS.
+  - [customer_visited_no_trans.sql](SQL/Easy/customer_visited_no_trans.sql): Solution for finding Customer Who Visited but Did Not Make Any Transactions.
+
   - [Invalid_tweets.sql](SQL/Easy/Invalid_tweets.sql): Solution for finding invalid tweets.
   - [report.sql](SQL/Easy/report.sql): Solution for reporting the number of employees reporting to each employee.
   - [S&P_global_imp_customers.sql](SQL/Easy/S&P_global_imp_customers.sql): Solution for identifying important customers.
   - [well_paid_emp.sql](SQL/Easy/well_paid_emp.sql): Solution for finding employees who earn more than their managers.
+
+
 
 - **Medium**: Contains solutions to medium-level SQL problems.
   - [manager_5_reports.sql](SQL/Medium/manager_5_reports.sql): Solution for finding managers with at least five direct reports.
