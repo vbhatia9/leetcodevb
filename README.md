@@ -45,11 +45,9 @@ The repository is organized into the following directories:
 ### SQL Solutions 🗃️
 
 - **Easy**: Contains solutions to easy-level SQL problems.
-
   - [avg_exp_employees.sql](SQL/Easy/avg_exp_employees.sql): Solution for find find avg experience years of all the employees for each project.
   - [claims.sql](SQL/Easy/claims.sql): Solution for finding claims by month CVS.
   - [customer_visited_no_trans.sql](SQL/Easy/customer_visited_no_trans.sql): Solution for finding Customer Who Visited but Did Not Make Any Transactions.
-
   - [Invalid_tweets.sql](SQL/Easy/Invalid_tweets.sql): Solution for finding invalid tweets.
   - [report.sql](SQL/Easy/report.sql): Solution for reporting the number of employees reporting to each employee.
   - [S&P_global_imp_customers.sql](SQL/Easy/S&P_global_imp_customers.sql): Solution for identifying important customers.
