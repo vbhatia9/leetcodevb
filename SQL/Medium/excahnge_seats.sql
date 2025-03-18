@@ -17,13 +17,44 @@ the id of the last student is not swapped.
 
 Return the result table ordered by id in ascending order.
 
+Example 1:
+
+Input: 
+Seat table:
++----+---------+
+| id | student |
++----+---------+
+| 1  | Abbot   |
+| 2  | Doris   |
+| 3  | Emerson |
+| 4  | Green   |
+| 5  | Jeames  |
++----+---------+
+Output: 
++----+---------+
+| id | student |
++----+---------+
+| 1  | Doris   |
+| 2  | Abbot   |
+| 3  | Green   |
+| 4  | Emerson |
+| 5  | Jeames  |
++----+---------+
+Explanation: 
+Note that if the number of students is odd, there is no need to change the last one's seat.
+
 */
 -- not sure 
-SELECT id, 
-       CASE 
-           WHEN MOD(id, 2) = 0 THEN LAG(student, 1) OVER (ORDER BY id)
-           WHEN MOD(id, 2) = 1 THEN LEAD(student, 1) OVER (ORDER BY id)
-           ELSE student 
-       END AS student
+
+-- Solution2    
+
+SELECT 
+    CASE 
+        WHEN id % 2 = 1 AND id + 1 <= (SELECT MAX(id) FROM Seat) THEN id + 1 -- if id is odd and not the last one
+        WHEN id % 2 = 0 THEN id - 1 -- if id is even
+        ELSE id -- if id is odd and the last one
+        
+     
+    END AS id,student-- swap id
 FROM Seat
 ORDER BY id;
