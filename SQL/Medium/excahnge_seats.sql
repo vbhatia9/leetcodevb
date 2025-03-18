@@ -45,6 +45,16 @@ Note that if the number of students is odd, there is no need to change the last 
 
 */
 -- not sure 
+-- Solution1
+-- SELECT id, 
+--        CASE 
+--            WHEN MOD(id, 2) = 0 THEN LAG(student, 1) OVER (ORDER BY id)
+--            WHEN MOD(id, 2) = 1 THEN LEAD(student, 1) OVER (ORDER BY id)
+--            ELSE student 
+--        END AS student
+-- FROM Seat
+-- ORDER BY id;
+
 
 -- Solution2    
 
