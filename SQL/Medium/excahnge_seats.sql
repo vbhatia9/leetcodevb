@@ -45,6 +45,15 @@ Note that if the number of students is odd, there is no need to change the last 
 
 */
 -- not sure 
+-- # Write your MySQL query statement below
+-- SELECT 
+--     id,
+--     CASE
+--         WHEN id % 2 = 0 THEN LAG(student) OVER(ORDER BY id)
+--         ELSE COALESCE(LEAD(student) OVER(ORDER BY id), student)
+--     END AS student
+-- FROM Seat
+
 -- Solution1
 -- SELECT id, 
 --        CASE 
@@ -57,7 +66,22 @@ Note that if the number of students is odd, there is no need to change the last 
 
 
 -- Solution2    
+/*
+Approach
+We check if the id is odd and if the next seat (id + 1) exists in the table.
+If true, swap the id with id + 1.
+If the id is even, swap it with id - 1.
+If there is no adjacent seat (last row in case of an odd number of students), retain the original id.
+The CASE statement handles these conditions efficiently.
 
+The final result is ordered by id in ascending order.
+
+Time complexity:
+Since we scan all rows once and use a simple conditional check with a subquery (SELECT id FROM Seat), the complexity is O(n).
+
+Space complexity:
+We do not use any extra storage apart from the output, so the complexity is O(1).
+*/
 SELECT 
     CASE 
         WHEN id % 2 = 1 AND id + 1 <= (SELECT MAX(id) FROM Seat) THEN id + 1 -- if id is odd and not the last one
