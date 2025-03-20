@@ -1,3 +1,11 @@
+/* SQL/Hard/
+ Department Top Three Salaries (Hard)
+
+Problem: Find the top 3 highest salaries in each department.
+
+*/
+
+
 WITH RankedSalaries AS (
     SELECT 
         DepartmentId,
