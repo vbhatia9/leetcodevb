@@ -59,6 +59,9 @@ The repository is organized into the following directories:
   - [manager_5_reports.sql](SQL/Medium/manager_5_reports.sql): Solution for finding managers with at least five direct reports.
   - [second_highest_salary.sql](SQL/Medium/second_highest_salary.sql): Solution for finding the second highest salary.
 
+- **Hard**: Contains solutions to hard level SQL problems.
+  - [dept_sal.sql](SQL/Hard/dept_sal.sql): Solution for Department Top Three Salaries
+
 ## How to Use  🛠️
 
 1. **Clone the repository**:
