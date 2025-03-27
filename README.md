@@ -56,6 +56,7 @@ The repository is organized into the following directories:
 
 
 - **Medium**: Contains solutions to medium-level SQL problems.
+  - [consecutive Numbers.sql](SQL/Medium/consecutive_numbers.sql)  Solution for consecutive_numbers
   - [manager_5_reports.sql](SQL/Medium/manager_5_reports.sql): Solution for finding managers with at least five direct reports.
   - [second_highest_salary.sql](SQL/Medium/second_highest_salary.sql): Solution for finding the second highest salary.
 
@@ -83,3 +84,6 @@ Feel free to contribute to this repository by submitting pull requests. Make sur
 
 License 📜
 This repository is licensed under the MIT License.
+
+
+[def]: SQL
