@@ -56,7 +56,8 @@ The repository is organized into the following directories:
 
 
 - **Medium**: Contains solutions to medium-level SQL problems.
-  - [consecutive Numbers.sql](SQL/Medium/consecutive_numbers.sql)  Solution for consecutive_numbers
+  - [consecutive Numbers.sql](SQL/Medium/consecutive_numbers.sql)  Solution for Find all numbers that appear at least three times consecutively.
+   - [excahnge_seats.sql](SQL/Medium/excahnge_seats.sql): Solution for Swap adjacent seat numbers.
   - [manager_5_reports.sql](SQL/Medium/manager_5_reports.sql): Solution for finding managers with at least five direct reports.
   - [second_highest_salary.sql](SQL/Medium/second_highest_salary.sql): Solution for finding the second highest salary.
 
