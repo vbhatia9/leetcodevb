@@ -37,6 +37,7 @@ The repository is organized into the following directories:
   - [find_duplicate_number.py](Medium/find_duplicate_number.py) : Solution for finding the Duplicate Number in an array without modifying. (Floyd's Tortoise and Hare (Cycle Detection)).
   - [rotate_image.py](Medium/rotate_image.py): Solution for rotation of n x n 2D matrix representing an image by 90 degrees clockwise.
   - [group_anagrams.py](Medium/group_anagrams.py): Solution for grouping anagrams.
+  - [product_array.py](Medium/product_array.py): Solution for Products of Array Except Self.
   - [removing_stars_from_string.py](Medium/removing_stars_from_string.py): Solution for removing stars from a string.
   - [twoSum_2.py](Medium/twoSum_2.py) : Solution for finding Two Sum using 2 Pointers.
   - [top_k_frequent.py](Medium/top_k_frequent.py) : Solution for finding the k most frequent elements.
