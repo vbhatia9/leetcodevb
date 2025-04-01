@@ -56,7 +56,7 @@ class findbalanced():
                 stk.append(c)
         print("STK final",stk)
         
-        return True if not stk else False
+        return True if not stk else False 
         
 
 if __name__ == "__main__":
