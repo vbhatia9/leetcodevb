@@ -20,7 +20,13 @@ class Solution:
         dummy = ListNode()
         current = dummy
         
-        while l1 and l2:
+        while l1 and l2: # While both lists are not empty
+            # Compare the values of the two nodes
+            # and append the smaller one to the merged list
+            # Move the pointer of the list from which the node was taken
+            # to the next node
+            # Append the smaller node to the merged list
+            # Move the pointer of the merged list to the next node
             if l1.val < l2.val:
                 current.next = l1
                 l1 = l1.next
@@ -30,7 +36,8 @@ class Solution:
             current = current.next
         
         if l1:
-            current.next = l1
+            current.next = l1 # If there are remaining nodes in l1, append them
+        # If there are remaining nodes in l2, append them
         elif l2:
             current.next = l2
         
