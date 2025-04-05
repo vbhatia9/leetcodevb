@@ -1,4 +1,5 @@
-""" 1757. Recyclable and Low Fat Products 
+/*
+1757. Recyclable and Low Fat Products 
 Table: Products
 
 +-------------+---------+
@@ -41,4 +42,5 @@ Output:
 | 3           |
 +-------------+
 Explanation: Only products 1 and 3 are both low fat and recyclable.
-"""
+*/
+select product_id from Products where low_fats = 'Y' and recyclable = 'Y';
