@@ -53,7 +53,10 @@ The repository is organized into the following directories:
   - [invalid_tweets.sql](SQL/Easy/invalid_tweets.sql): Solution for finding invalid tweets.
   - [report.sql](SQL/Easy/report.sql): Solution for reporting the number of employees reporting to each employee.
   - [replace_empid.sql](SQL/Easy/replace_empid.sql): Solution for Replace Employee ID With The Unique Identifier
+  - [second_highest_sal.sql](SQL/Easy/second_highest_sal.sql): Solution for identifying to get the second highest salary.
   - [sp_global_imp_customers.sql](SQL/Easy/sp_global_imp_customers.sql): Solution for identifying important customers.
+  - [toptraveller.sql](SQL/Easy/toptraveller.sql): Solution to report the distance traveled by each user.
+  
   - [well_paid_emp.sql](SQL/Easy/well_paid_emp.sql): Solution for finding employees who earn more than their managers.
 
 
