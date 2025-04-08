@@ -51,6 +51,7 @@ The repository is organized into the following directories:
   - [customer_visited_no_trans.sql](SQL/Easy/customer_visited_no_trans.sql): Solution for finding customers who visited but did not make any transactions.
   - [invalid_tweets.sql](SQL/Easy/invalid_tweets.sql): Solution for finding invalid tweets.
   - [report.sql](SQL/Easy/report.sql): Solution for reporting the number of employees reporting to each employee.
+  - [replace_empid.sql](SQL/Easy/replace_empid.sql): Solution for Replace Employee ID With The Unique Identifier
   - [sp_global_imp_customers.sql](SQL/Easy/sp_global_imp_customers.sql): Solution for identifying important customers.
   - [well_paid_emp.sql](SQL/Easy/well_paid_emp.sql): Solution for finding employees who earn more than their managers.
 
