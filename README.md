@@ -46,6 +46,7 @@ The repository is organized into the following directories:
 ### SQL Solutions 🗃️
 
 - **Easy**: Contains solutions to easy-level SQL problems.
+  - [article_views.sql](SQL/Easy/article_views.sql): Solution for finding all the authors that viewed at least one of their own articles.
   - [avg_exp_employees.sql](SQL/Easy/avg_exp_employees.sql): Solution for finding the average experience years of all the employees for each project.
   - [claims.sql](SQL/Easy/claims.sql): Solution for finding claims by month CVS.
   - [customer_visited_no_trans.sql](SQL/Easy/customer_visited_no_trans.sql): Solution for finding customers who visited but did not make any transactions.
