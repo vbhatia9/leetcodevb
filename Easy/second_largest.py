@@ -1,16 +1,17 @@
 #find the second largest element in an array 
-# TODO
-def large(a):
-    largest = 0
-    for i in a:
-        
-        if largest < i:
-            largest = i
-            
-            print(f"largest {largest} a[i] { a[i]} a[i+1] {a[i+1]}")
-        
+def second_largest(a):
+    if len(a) < 2:
+        return None  # Not enough elements for second largest
+    first, second = float('-inf'), float('-inf')
+    for num in a:
+        if num > first:
+            second = first
+            first = num
+        elif num > second and num != first:
+            second = num
+    return second
             
 
 if __name__ == "__main__":
     a_lst = [3,5,7,12,3,1]
-    large(a_lst)
+    second_largest(a_lst)

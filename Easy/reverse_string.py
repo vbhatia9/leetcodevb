@@ -28,8 +28,13 @@ class Solution:
         # print(f"REVERSE is {x}")
         ####
         #Solution 1
-        #The active selection is a snippet of Python code that reverses a sequence s in place. The code uses a for loop to iterate over the first half of the sequence. The loop variable i ranges from 0 to len(s)//2 - 1, where len(s) is the length of the sequence s. This ensures that the loop only runs for half the length of the sequence, which is sufficient for reversing it.
-        #Within the loop, the code swaps the elements at positions i and ~i. The ~i expression uses the bitwise NOT operator, which in this context effectively computes the index from the end of the sequence. Specifically, ~i is equivalent to -i-1, so when i is 0, ~i is -1 (the last element), when i is 1, ~i is -2 (the second-to-last element), and so on. This swapping continues until the loop completes, resulting in the sequence being reversed.
+        #The active selection is a snippet of Python code that reverses a sequence s in place. The code uses a for loop to iterate over the first half of the sequence.
+        #  The loop variable i ranges from 0 to len(s)//2 - 1, where len(s) is the length of the sequence s. 
+        # This ensures that the loop only runs for half the length of the sequence, which is sufficient for reversing it.
+        #Within the loop, the code swaps the elements at positions i and ~i. 
+        # The ~i expression uses the bitwise NOT operator, which in this context effectively computes the index from the end of the sequence. 
+        # Specifically, ~i is equivalent to -i-1, so when i is 0, ~i is -1 (the last element), when i is 1, ~i is -2 (the second-to-last element), and so on. 
+        # This swapping continues until the loop completes, resulting in the sequence being reversed.
         #The code then prints the reversed sequence s to the console.
         for i in range(len(s)//2):
             s[i], s[~i] = s[~i], s[i]

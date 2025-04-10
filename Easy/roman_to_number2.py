@@ -65,10 +65,13 @@ class Solution:
 
             print("number before ",number)
             print(f"CHECK roman[s[i]] {roman[s[i]] } < roman[s[(i+1)]] {roman[s[i+1]] }")
+
             if roman[s[i]] < roman[s[(i+1)]]:
+
                 #print(f"roman[s[i]] {roman[s[i]] } < roman[s[(i+1)]] {roman[s[i+1]] }")
                 number-=roman[s[i]]
                 print("number after subtact",number)
+                
             else:
                 number+=roman[s[i]]
                 print("number after add",number)
