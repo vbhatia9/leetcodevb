@@ -31,3 +31,7 @@ id address
  
 find  salary for each employee along with deptname and emp address*/
 
+SELECT e.id AS EmployeeID, e.salary, d.DeptName, a.address 
+FROM emp e
+JOIN dept d ON e.DeptID = d.id
+JOIN emp_addrs a ON e.id = a.id;
